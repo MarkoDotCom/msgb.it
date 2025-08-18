@@ -1,0 +1,7 @@
+<!-- src/app/resumen/resumen.html -->
+<div *ngIf="cargando">Cargando…</div>
+<div *ngIf="error">{{ error }}</div>
+
+<p *ngIf="!cargando && !error" class="wrap">
+{{ contenido }}
+</p>
